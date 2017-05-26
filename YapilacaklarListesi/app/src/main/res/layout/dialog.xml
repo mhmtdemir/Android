@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bgdialog"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Kategori Ekleyin"
+        android:textColor="@color/White"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <EditText
+        android:id="@+id/etsearch"
+        android:layout_width="250dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:lines="2"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" >
+    </EditText>
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etsearch"
+        android:background="@drawable/edittext2"
+        android:layout_below="@+id/etsearch"
+        android:layout_marginRight="24dp"
+        android:text=" İptal " />
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btncancel"
+        android:layout_alignBottom="@+id/btncancel"
+        android:background="@drawable/edittext2"
+        android:layout_alignLeft="@+id/etsearch"
+        android:layout_marginLeft="27dp"
+        android:text=" Ekle " />
+</RelativeLayout>

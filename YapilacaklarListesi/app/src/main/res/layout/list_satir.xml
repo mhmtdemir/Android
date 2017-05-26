@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/event_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="3sp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarm"
+                android:layout_alignParentRight="true"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bugün"
+                android:layout_marginTop="5dp"
+                android:id="@+id/kategori"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:id="@+id/tvBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Başlık"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tvTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="TARİH"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kontrol"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:text="ZAMAN:"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView7"
+                android:layout_toRightOf="@+id/textView7"
+                android:text="11:34 PM"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="11dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/durum"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:theme="@style/CheckBoxTheme"
+                android:layout_alignBaseline="@id/textView7"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/aciklamatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AÇIKLAMA OLACAK :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/aciklama"
+    android:visibility="invisible"
+    android:textStyle="bold"
+    android:id="@+id/iddeger"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>

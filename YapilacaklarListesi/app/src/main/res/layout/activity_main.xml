@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SeaGreen"
+        android:id="@+id/toolbar"
+        app:contentInsetLeft="4dp"
+        app:contentInsetStart="0dp"
+
+        app:logo="@drawable/home"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Yapilacaklar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/side_nav_bar"
+        android:layout_below="@id/toolbar"
+        >
+
+        <ListView
+            android:id="@+id/yapilacaklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/eklefab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabSize="auto"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:backgroundTint="@color/SeaGreen"
+            android:src="@drawable/fab"
+            app:pressedTranslationZ="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            >
+        </android.support.design.widget.FloatingActionButton>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

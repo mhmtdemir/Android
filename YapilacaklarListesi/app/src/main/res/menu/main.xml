@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity"
+    >
+
+    <group  android:menuCategory="container"
+            android:icon="@drawable/squad2"
+            android:visible="true">
+
+    <item android:id="@+id/item1"
+        android:title="Tarihe Göre Listele"
+
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/tarih2"
+        android:menuCategory="container" />
+
+
+    </group>
+
+    <item android:id="@+id/item2"
+        android:title="Yapilanlar"
+        android:icon="@drawable/yapildibutton"
+        android:orderInCategory="101"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/item3"
+        android:title="Yapilacaklar"
+        android:orderInCategory="100"
+        android:icon="@drawable/yapilacak"
+        app:showAsAction="always"
+       />
+
+</menu>
+<!--
+    <group android:menuCategory="container">
+        <item android:id="@+id/item2"
+            android:title="Yapilanlar"
+            android:icon="@drawable/yapildibutton"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"/>
+        <item android:id="@+id/item3"
+            android:title="Yapilacaklar"
+            android:orderInCategory="100"
+            android:icon="@drawable/yapilacak"
+            app:showAsAction="ifRoom"
+            android:checked="false"/>
+
+        <item android:id="@+id/item4"
+            android:title="HAFTALIK"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"/>
+
+
+    -->
+
